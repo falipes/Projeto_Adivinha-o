@@ -1,0 +1,109 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variáveis de cores */
+:root {
+  --primary-color: #2c1731;
+  --secondary-color: #42355a;
+  --background-gradient-start: #4d3f5e;
+  --background-gradient-end: #af7ac4;
+}
+
+/* Fontes */
+body, button, input {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Body */
+body {
+  background: linear-gradient(287.56deg, var(--background-gradient-start) 0%, var(--background-gradient-end) 100%);
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container principal */
+main {
+  background: white;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.6rem;
+  padding: 4.8rem 6.4rem 6.4rem;
+  width: min(42.8rem, 90%);
+  text-align: center;
+  margin-top: -12rem;
+}
+
+/* Título principal */
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+  color: var(--primary-color);
+}
+
+/* Texto principal */
+p {
+  opacity: 0.8;
+  color: #34355b;
+}
+
+/* Formulário */
+form {
+  margin-top: 4.8rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Input de número */
+input {
+  background-color: #dce2e9;
+  width: 6rem;
+  border: none;
+  border-radius: 0.4rem 0 0 0.4rem;
+  padding: 1.6rem;
+}
+
+/* Botão de tentar */
+button#btnTry {
+  background-color: var(--secondary-color);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0 0.4rem 0.4rem 0;
+  cursor: pointer;
+  padding: 1.6rem;
+  transition: background 0.3s;
+}
+
+button#btnTry:hover {
+  background-color: #19193a;
+}
+
+/* Ocultar elemento */
+.hide {
+  display: none;
+}
+
+/* Tela de resultado */
+.screen2 {
+  button {
+    border-radius: 0.4rem;
+    background-color: var(--secondary-color);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1.6rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+    font-weight: normal;
+    margin-bottom: 3.3rem;
+    color: var(--primary-color);
+  }
+}
